@@ -1,0 +1,14 @@
+@import url("../variables/default.scss");
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@200&display=swap");
+
+
+* {
+    padding: 0;
+    margin: 0;   
+    font-family: "Public Sans";
+    box-sizing: border-box;
+  }
+
+.nav {
+    background-color: $blue;
+}
