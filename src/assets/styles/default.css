@@ -1,4 +1,4 @@
-@import url("../variables/default.scss");
+@import url("../variables/default.css");
 @import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@200&display=swap");
 * {
   padding: 0;
