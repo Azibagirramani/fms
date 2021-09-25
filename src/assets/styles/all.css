@@ -1,6 +1,6 @@
-@import url("./default.scss");
+@import url("./default.css");
 @import url("./large.scss");
-@import url("./small.scss");
-@import url("./tab.scss");
-@import url("./mobile.scss");
+@import url("./small.css");
+@import url("./tab.css");
+@import url("./mobile.css");
 /*# sourceMappingURL=all.css.map */
