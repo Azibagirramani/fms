@@ -1,9 +1,105 @@
-@import url("../variables/default.css");
 @import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@200&display=swap");
 * {
   padding: 0;
   margin: 0;
+  font-family: "Public Sans";
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.main {
+  width: 100%;
+}
+
+.nav {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-shadow: 5px 10px 8px #888888;
+          box-shadow: 5px 10px 8px #888888;
+}
+
+.nav div {
+  margin: 13px 50px 13px;
+}
+
+.side_options {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 10fr 1fr;
+      grid-template-rows: 1fr 10fr 1fr;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  padding: 20px;
+  position: fixed;
+  background-color: white;
+  width: 250px;
+  height: 100vh;
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+
+.side_options div {
+  width: inherit;
+  text-align: start;
+}
+
+main.content {
+  width: calc(100% - 244px);
+  margin-left: 242px;
+  position: relative;
+  min-height: 100vh;
+  z-index: 2;
+  background-color: #f0ebeb;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+  margin-top: 0;
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+
+.navigation {
+  text-decoration: none;
+}
+
+.navigation nav a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 15px;
+  color: black;
+  padding: 8px 0px 5px 5px;
+  width: 150%;
+}
+
+.navigation nav a:hover {
+  border-radius: 15px;
+  background-color: #a8e0e2;
+}
+
+.navigation nav a:focus {
+  border-radius: 15px;
+  background-color: #a8e0e2;
+}
+
+.navigation .nav_links li {
+  margin-top: 20px;
+  border-radius: 15px;
+  padding: 5px;
+  background-color: burlywood;
+}
+
+.navigation .nav_links a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
 }
 /*# sourceMappingURL=default.css.map */

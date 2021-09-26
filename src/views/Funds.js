@@ -1,12 +1,13 @@
- 
-const Dashboard = () => {
+const Funds
+ = () => {
     return ( 
         <div className="mt-5">
             <h1>
-                Dashboard
+                Funds
             </h1>
         </div>
      );
 }
  
-export default Dashboard;
+export default Funds
+;

@@ -1,14 +1,89 @@
-@import url("../variables/default.css");
+@import "../variables/default.scss";
 @import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@200&display=swap");
-
 
 * {
     padding: 0;
-    margin: 0;   
+    margin: 0;
     font-family: "Public Sans";
     box-sizing: border-box;
-  }
-
+}
+.main {
+    width: 100%;
+}
 .nav {
-    background-color: $blue;
+    background-color: $white;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 5px 10px 8px #888888;
+}
+.nav div {
+    margin: 13px 50px 13px;
+}
+
+.side_options {
+    display: grid;
+    grid-template-rows: 1fr 10fr 1fr;
+    justify-content: start;
+    padding: 20px;
+    position: fixed;
+    background-color: white;
+    width: 250px;
+    height: 100vh;
+    transition: all 0.8s ease-in-out;
+    div{
+        width: inherit;
+        text-align: start;
+    }
+}
+
+main.content {
+    width: calc(100% - 244px);
+    margin-left: 242px;
+    position: relative;
+    min-height: 100vh;
+    z-index: 2;
+    background-color: $grey;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+    margin-top: 0;
+    transition: all 0.8s ease-in-out;
+}
+
+.navigation {
+    text-decoration: none;
+
+    nav {
+        a {
+            display: flex;
+            margin-top: 15px;
+            color: $black;
+
+            padding: 8px 0px 5px 5px;
+            width: 150%;
+        }
+        a:hover {
+            border-radius: 15px;
+            background-color: rgb(168, 224, 226);
+        }
+        a:focus {
+            border-radius: 15px;
+            background-color: rgb(168, 224, 226);
+        }
+    }
+    .nav_links {
+        li {
+            margin-top: 20px;
+            border-radius: 15px;
+            padding: 5px;
+            background-color: burlywood;
+        }
+        a {
+            text-decoration: none;
+            color: $black;
+            font-weight: 600;
+        }
+    }
 }
