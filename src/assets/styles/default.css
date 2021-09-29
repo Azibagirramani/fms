@@ -55,7 +55,7 @@ main.content {
   position: relative;
   min-height: 100vh;
   z-index: 2;
-  background-color: #f0ebeb;
+  background-color: #eaf2ff;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -75,19 +75,16 @@ main.content {
   display: -ms-flexbox;
   display: flex;
   margin-top: 15px;
-  color: black;
-  padding: 8px 0px 5px 5px;
+  color: #a8abae;
+  padding: 20px 0px 20px 5px;
   width: 80%;
 }
 
-.navigation nav a:hover {
+.navigation nav a.active {
   border-radius: 15px;
-  background-color: #a8e0e2;
-}
-
-.navigation nav a:focus {
-  border-radius: 15px;
-  background-color: #a8e0e2;
+  background-color: #eaf2ff;
+  color: black;
+  font-weight: 800;
 }
 
 .navigation .nav_links li {

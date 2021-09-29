@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/Navbar';
 import SideOptions from './components/SideOptions';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Dashboard from './views/Dashboard';
+import Dashboard from './views/dashboard';
 import Funds from './views/Funds';
 import Settings from './views/Settings';
 import Project from './views/Project';

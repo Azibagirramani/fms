@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 const SideOptions = () => {
     const logout = () => {
         alert('logout');
@@ -6,7 +6,7 @@ const SideOptions = () => {
     return (
         <div className="side_options">
             <div className="border-bottom d-flex ">
-                <p className=" text-light fw-bold bg-primary flex-start rounded-pill p-1 px-3">
+                <p className=" text-light fw-bold bg-primary flex-start rounded-pill pt-3 px-3">
                     FMS
                 </p>
 
@@ -15,30 +15,29 @@ const SideOptions = () => {
 
             <div className="navigation">
                 <nav >
-
-                    <Link to='/' >
+                    <NavLink to='/' exact >
                         <span >
                             <i class='bx-fw bx bx-border-all'></i>
                             Dashboard
                         </span>
-                    </Link>
+                    </NavLink>
 
-                    <Link to='/Funds'>
+                    <NavLink to='/Funds'>
                         <i class='bx-fw bx  bx bx-credit-card pt-1'></i>
                         <span>
                             Funds
                         </span>
-                    </Link>
-                    <Link to='/Projects'>
+                    </NavLink>
+                    <NavLink to='/Projects'>
                         <i class='bx-fw bx bx bx-gift pt-1'></i>
                         <span>
                             Projects
                         </span>
-                    </Link>
-                    <Link to='/Settings'>
+                    </NavLink>
+                    <NavLink to='/Settings'>
                         <i class='bx-fw bx bx-slider bx-rotate-90 ps-2'></i>
                         Settings
-                    </Link>
+                    </NavLink>
                 </nav>
 
 
@@ -46,7 +45,7 @@ const SideOptions = () => {
 
             <div className="border-top">
                 <span onClick={logout}>
-                <i class='bx bx-log-out'></i>
+                    <i class='bx bx-log-out'></i>
                     logout
                 </span>
             </div>

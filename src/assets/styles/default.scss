@@ -7,15 +7,18 @@
     font-family: "Public Sans";
     box-sizing: border-box;
 }
+
 .main {
     width: 100%;
 }
+
 .nav {
     background-color: $white;
     display: flex;
     justify-content: space-between;
     box-shadow: 5px 10px 8px #888888;
 }
+
 .nav div {
     margin: 13px 50px 13px;
 }
@@ -30,7 +33,8 @@
     width: 250px;
     height: 100vh;
     transition: all 0.8s ease-in-out;
-    div{
+
+    div {
         width: inherit;
         text-align: start;
     }
@@ -59,20 +63,21 @@ main.content {
         a {
             display: flex;
             margin-top: 15px;
-            color: $black;
+            color: $light_grey;
 
-            padding: 8px 0px 5px 5px;
+            padding: 20px 0px 20px 5px;
             width: 80%;
         }
-        a:hover {
+
+        a.active {
             border-radius: 15px;
-            background-color: rgb(168, 224, 226);
+            background-color: $grey;
+            color: $black;
+            font-weight: 800;
         }
-        a:focus {
-            border-radius: 15px;
-            background-color: rgb(168, 224, 226);
-        }
+
     }
+
     .nav_links {
         li {
             margin-top: 20px;
@@ -80,6 +85,7 @@ main.content {
             padding: 5px;
             background-color: burlywood;
         }
+
         a {
             text-decoration: none;
             color: $black;

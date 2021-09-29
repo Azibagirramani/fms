@@ -1,9 +1,8 @@
-import { useLocation, useParams } from "react-router";
+import { useLocation } from "react-router";
 import Image from 'react-bootstrap/Image'
 
 const Navbar
  = () => {
-     const { id } = useParams();
      const location = useLocation();
      console.log( 'rout', location.pathname.replace('/', ''))
 
