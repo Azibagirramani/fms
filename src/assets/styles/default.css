@@ -66,6 +66,16 @@ main.content {
   transition: all 0.8s ease-in-out;
 }
 
+.logo {
+  background-color: #508ff4;
+}
+
+.logout {
+  color: #a8abae;
+  font-weight: 600;
+  font-size: larger;
+}
+
 .navigation {
   text-decoration: none;
 }

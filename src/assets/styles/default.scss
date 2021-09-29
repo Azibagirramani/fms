@@ -55,6 +55,14 @@ main.content {
     margin-top: 0;
     transition: all 0.8s ease-in-out;
 }
+.logo {
+    background-color: $logo;
+}
+.logout {
+    color: $light_grey;
+    font-weight: 600;
+    font-size: larger;
+}
 
 .navigation {
     text-decoration: none;

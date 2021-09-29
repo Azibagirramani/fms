@@ -5,8 +5,8 @@ const SideOptions = () => {
     }
     return (
         <div className="side_options">
-            <div className="border-bottom d-flex ">
-                <p className=" text-light fw-bold bg-primary flex-start rounded-pill pt-3 px-3">
+            <div className="border-bottom d-flex " style={{height : '90%'}}>
+                <p className=" text-light fw-bold logo flex-start rounded-pill pt-3 px-3">
                     FMS
                 </p>
 
@@ -16,7 +16,7 @@ const SideOptions = () => {
             <div className="navigation">
                 <nav >
                     <NavLink to='/' exact >
-                        <span >
+                        <span className="h-5">
                             <i class='bx-fw bx bx-border-all'></i>
                             Dashboard
                         </span>
@@ -43,11 +43,10 @@ const SideOptions = () => {
 
             </div>
 
-            <div className="border-top">
-                <span onClick={logout}>
-                    <i class='bx bx-log-out'></i>
-                    logout
-                </span>
+            <div className="border-top  logout d-flex" onClick={logout}>
+                <i class='bx bx-log-out pe-2 bx-md  '></i>
+                <span className="pt-1">logout </span>
+
             </div>
 
         </div>
