@@ -109,4 +109,22 @@ main.content {
   color: black;
   font-weight: 600;
 }
+
+.cards_container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.cards_container .cards {
+  border-radius: 10px;
+  max-width: 18rem;
+  background-color: #fb8500;
+}
+
+.cards_container .cards .cards-header {
+  padding: 5px 10px 8px 20px;
+  border-bottom: 1px solid white;
+}
 /*# sourceMappingURL=default.css.map */
