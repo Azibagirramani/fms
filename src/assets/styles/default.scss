@@ -85,6 +85,12 @@ main.content {
             color: $black;
             font-weight: 800;
         }
+        a:hover {
+            border-radius: 15px;
+            background-color: $grey;
+            color: $black;
+            font-weight: 800;
+        }
 
     }
 

@@ -97,6 +97,13 @@ main.content {
   font-weight: 800;
 }
 
+.navigation nav a:hover {
+  border-radius: 15px;
+  background-color: #eaf2ff;
+  color: black;
+  font-weight: 800;
+}
+
 .navigation .nav_links li {
   margin-top: 20px;
   border-radius: 15px;
