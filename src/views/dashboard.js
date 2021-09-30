@@ -1,5 +1,7 @@
+const { default: Charts } = require("../components/Charts")
 
 const Dashboard = () => {
+   
     return (
         <div className="p-4">
             <div className="cards_container">
@@ -71,6 +73,7 @@ const Dashboard = () => {
                 </div>
             </div>
 
+            <Charts></Charts>
         </div>
     );
 }

@@ -127,4 +127,13 @@ main.content {
   padding: 5px 10px 8px 20px;
   border-bottom: 1px solid white;
 }
+
+.chart_container {
+  padding: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
 /*# sourceMappingURL=default.css.map */
