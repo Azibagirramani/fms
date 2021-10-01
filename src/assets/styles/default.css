@@ -54,7 +54,7 @@ main.content {
   margin-left: 242px;
   position: relative;
   min-height: 100vh;
-  z-index: 2;
+  /* z-index: 2; */
   background-color: #eaf2ff;
   background-size: cover;
   background-position: center;
