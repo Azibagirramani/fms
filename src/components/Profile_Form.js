@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 
-const UserData=()=> {
+const Profile_Form=()=> {
   return (
    <Fragment>
         <div class="col-sm-5 offset-sm-2 col-md-7 offset-md-0">
@@ -101,4 +101,4 @@ const UserData=()=> {
   );
 }
 
-export default UserData;
+export default Profile_Form;

@@ -1,4 +1,4 @@
-import UserData from "../components/UserData";
+import Profile_Form from "../components/Profile_Form";
 const Settings = () => {
   return (
     <div className="my-5 px-5 container">
@@ -32,7 +32,7 @@ const Settings = () => {
               </div>
             </div>
           </div>
-          <UserData/>
+          <Profile_Form/>
         </div>
       </div>
     </div>
