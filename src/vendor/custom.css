@@ -13,3 +13,26 @@
     scroll-behavior: smooth;
     overflow-y: scroll;
 }
+
+
+/* upload file modal  */
+
+/* upload file design */
+.upload-icon-size {
+    font-size: 7rem;
+}
+
+.upload-background {
+    background-color: #F7F7F7;
+    max-width: 100%;
+    cursor: pointer;
+}
+
+.icon-color{
+    color: #AEAEAE;
+}
+
+
+textarea{
+    height: 10rem;
+}

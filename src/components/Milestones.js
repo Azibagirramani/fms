@@ -1,5 +1,12 @@
-import { Fragment } from "react";
-function Milestones() {
+import { Fragment, useRef } from "react";
+function Milestones() { 
+  let file = useRef(null)
+  function openUpload(){
+    const open_upload = file.current
+    open_upload.click()
+  }
+
+
   return (
     <Fragment>
       <div className="">
@@ -97,7 +104,7 @@ function Milestones() {
         data-bs-keyboard="false"
       >
         <div class="modal-dialog modal-lg modal-dialog-centered">
-          <div class="modal-content">
+          <div class="modal-content px-3">
             <div class="modal-header">
               <h5 class="modal-title" id="exampleModalLabel">
                 Milestone Report
@@ -110,12 +117,12 @@ function Milestones() {
               ></button>
             </div>
             <div class="modal-body">
-              <p>
+              <p className="fw-bold">
                 Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit
               </p>
-              <p>Date: 1/12/2021</p>
+              <p><span className="fw-bold">Date:</span> 1/12/2021</p>
               <form>
-                <div className="row">
+                <div className="row gy-4">
                   <div className="col-md-3 fw-bold">Amount Spent:</div>
                   <div className="col-md-7">
                     <input type="text" class="form-control" />
@@ -128,13 +135,41 @@ function Milestones() {
                     </select>
                   </div>
                 </div>
-                <div>
-                  <label for="description" class="form-label">description</label>
-                  <textarea  className="form-control w-100"/>
+                <div className="my-3">
+                  <label for="description" class="form-label fw-bold">
+                    Description
+                  </label>
+                  <textarea className="form-control w-100" />
                 </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-primary">
-                    Save changes
+
+                <div onClick={openUpload} className="d-flex rounded border align-items-center flex-column upload-background mt-2 rounded-5">
+                  <i className="bx bx-cloud-upload upload-icon-size icon-color"></i>
+                  <p className="icon-color">
+                    Drag and drop, or{" "}
+                    <span className="text-primary">BROWSE</span> your file
+                  </p>
+                  <input className="d-none" type="file" id="myFile" name="filename" ref={file}/>
+                </div>
+
+                <div className="mt-3">
+                  <div className="d-flex gap-3">
+                    <i class="bx bxs-file-doc text-danger fs-3"></i>
+                    <p>
+                      Lorem Lorem ipsum dolor sit amet consectetur adipisicing
+                      elit{" "}
+                    </p>
+                  </div>
+                  <div className="d-flex gap-3">
+                    <i class="bx bxs-file-pdf text-primary fs-3"></i>
+                    <p>
+                      Lorem Lorem ipsum dolor sit amet consectetur adipisicing
+                      elit{" "}
+                    </p>
+                  </div>
+                </div>
+                <div class="modal-footer border-0">
+                  <button type="button" class="btn btn-primary fw-bold px-4 rounded-pill">
+                    Submit
                   </button>
                 </div>
               </form>
