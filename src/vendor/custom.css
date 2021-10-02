@@ -13,3 +13,22 @@
     scroll-behavior: smooth;
     overflow-y: scroll;
 }
+
+._setting_avatar {
+    vertical-align: middle;
+    width: 300PX;
+    height: 300PX;
+    border-radius: 50%;
+  }
+  .icon-cam{
+      color: #fff !important;
+  }
+  .icon-img{
+      color: #fff !important;
+  }
+.btn-success{
+    background-color: #02BC77 !important;
+}
+.btn{
+    border: none !important;
+}
