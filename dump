@@ -1,0 +1,20 @@
+ {/* <div className="App">
+        <SideOptions />
+        <main className="content">
+          <Navbar />
+          <Switch>
+            <Route exact path="/">
+              <Dashboard />
+            </Route>
+            <Route exact path="/funds">
+              <Funds />
+            </Route>
+            <Route exact path="/projects">
+              <Project />
+            </Route>
+            <Route exact path="/Settings">
+              <Settings />
+            </Route>
+          </Switch>
+        </main>
+      </div> */}
