@@ -6,7 +6,7 @@ const SideOptions = () => {
   return (
     <div className="side_options">
       <div className="border-bottom d-flex " style={{ height: "90%" }}>
-        <p className=" text-light fw-bold logo flex-start rounded-pill pt-3 px-3">
+        <p className=" text-light fw-bold logo flex-start rounded-pill pt-2 px-3">
           FMS
         </p>
       </div>

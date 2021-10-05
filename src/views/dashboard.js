@@ -44,6 +44,13 @@ const Dashboard = () => {
   return (
     <div className="p-4">
       <Cards projects={projects} />
+      <div className="bg-white"> 
+      <div>
+        <h1>
+          yoo
+        </h1>
+      </div>
+      </div>
 
       <Charts></Charts>
     </div>

@@ -11,7 +11,7 @@
   width: 100%;
 }
 
-.nav {
+.navi {
   background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -23,7 +23,7 @@
           box-shadow: 5px 10px 8px #888888;
 }
 
-.nav div {
+.navi div {
   margin: 13px 50px 13px;
 }
 
@@ -54,7 +54,7 @@ main.content {
   margin-left: 242px;
   position: relative;
   min-height: 100vh;
-  /* z-index: 2; */
+  z-index: 2;
   background-color: #eaf2ff;
   background-size: cover;
   background-position: center;
@@ -68,6 +68,10 @@ main.content {
 
 .logo {
   background-color: #508ff4;
+}
+
+.nav_icon {
+  font-size: 35px;
 }
 
 .logout {
@@ -120,17 +124,18 @@ main.content {
 .cards_container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr ;
-      grid-template-columns: 1fr ;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
-.cards {
+.cards_container .cards {
   border-radius: 10px;
   max-width: 18rem;
-  background-color: rgb(251, 133, 0);
-  margin-right: 15px
+  background-color: #fb8500;
+  margin-right: 20px;
 }
- .cards .cards-header {
+
+.cards_container .cards .cards-header {
   padding: 5px 10px 8px 20px;
   border-bottom: 1px solid white;
 }

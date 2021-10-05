@@ -12,14 +12,14 @@
     width: 100%;
 }
 
-.nav {
+.navi {
     background-color: $white;
     display: flex;
     justify-content: space-between;
     box-shadow: 5px 10px 8px #888888;
 }
 
-.nav div {
+.navi div {
     margin: 13px 50px 13px;
 }
 
@@ -58,6 +58,9 @@ main.content {
 
 .logo {
     background-color: $logo;
+}
+.nav_icon{
+    font-size: 35px;
 }
 
 .logout {
@@ -118,6 +121,7 @@ main.content {
         border-radius: 10px;
         max-width: 18rem;
         background-color: rgb(251, 133, 0);
+        margin-right: 20px;
 
         .cards-header {
             padding: 5px 10px 8px 20px;

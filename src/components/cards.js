@@ -1,6 +1,6 @@
 const Cards = ({projects}) => {
     return ( 
-        <div className="row">
+        <div className="cards_container row ">
         {projects.map((project, index) => (
             <div
               key={project.index}
