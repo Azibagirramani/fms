@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Cards from "../components/cards";
 
 const { default: Charts } = require("../components/Charts");
 
@@ -42,28 +43,7 @@ const Dashboard = () => {
   ]);
   return (
     <div className="p-4">
-      <div className="row">
-        {projects.map((project, index) => (
-          <div
-            key={project.index}
-            className="col cards text-white mb-3"
-            style={{ backgroundColor: `${project.backgroundColor}` }}
-          >
-            <div className="cards-header ">{project.title}</div>
-            <div className="card-body p-3 d-flex justify-content-between">
-              <div className="ps-2">
-                <p className="fs-3 fw-bold">{project.amount}</p>
-                <p className="fs-6">{project.rate}</p>
-              </div>
-              <div>
-                <i
-                  class={`bx bx-time-five bx-lg pt-4 ${project.backgroundColor}`}
-                ></i>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
+      <Cards projects={projects} />
 
       <Charts></Charts>
     </div>
