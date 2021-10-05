@@ -1,13 +1,14 @@
 // import './App.css';
-import './assets/styles/all.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Navbar from './components/Navbar';
-import SideOptions from './components/SideOptions';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Dashboard from './views/dashboard';
-import Funds from './views/Funds';
-import Settings from './views/Settings';
-import Project from './views/Project';
+import "./assets/styles/all.css";
+import "./vendor/custom.css"
+import "bootstrap/dist/css/bootstrap.min.css";
+import Navbar from "./components/Navbar";
+import SideOptions from "./components/SideOptions";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Dashboard from "./views/dashboard";
+import Funds from "./views/Funds";
+import Settings from "./views/Settings";
+import Project from "./views/Project";
 
 function App() {
   return (
@@ -30,10 +31,7 @@ function App() {
               <Settings />
             </Route>
           </Switch>
-
         </main>
-
-
       </div>
     </Router>
   );
