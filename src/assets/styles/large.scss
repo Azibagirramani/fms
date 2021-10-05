@@ -2,7 +2,40 @@
 @import url("../variables/default.css");
 
 
-@media screen and (min-width: 1024px) {
-   
+@media screen and (max-width: 1024px) {
+  * {
+    transition: all 0.8s ease-in-out;
+
   }
+  .side_options {
+
+    width: 200px;
+    padding: 10px;
+  }
+  .main {
+    width: 100%;
+}
+  main.content {
+    width: calc(100% - 200px);
+    margin-left: 200px;
+
+
+  }
+   .navi{
+     height: 50px;
+   }
+   .nav_icon{
+    font-size: 25px;
+    height: 70%;
+}
+  }
+
+  .cards {
+    height: 150px;  
+    width: 10px;
+    font-size: 14px;
+    .cards-header {
+        border-bottom: 1px solid white;
+    }
+}
   
