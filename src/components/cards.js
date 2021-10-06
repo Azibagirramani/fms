@@ -1,6 +1,6 @@
 const Cards = ({projects}) => {
     return ( 
-        <div className="cards_container row ">
+        <div className="cards_container d-flex justify-content-between ">
         {projects.map((project, index) => (
             <div
               key={project.index}
