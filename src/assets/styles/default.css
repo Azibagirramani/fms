@@ -148,4 +148,24 @@ main.content {
       grid-template-columns: 1fr 1fr;
   gap: 30px;
 }
+
+.whole_table div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr 2fr 1fr 1fr 2fr 2fr 1fr;
+      grid-template-columns: 1fr 2fr 2fr 1fr 1fr 2fr 2fr 1fr;
+  gap: 15px;
+}
+
+.whole_table .table_header {
+  background-color: #F1F4F7;
+  border-top: 2px solid #D9DADC;
+  border-bottom: 2px solid #D9DADC;
+  font-weight: 800;
+}
+
+.whole_table .table_content {
+  border-bottom: 2px solid #ECEBEB;
+  background-color: white;
+}
 /*# sourceMappingURL=default.css.map */

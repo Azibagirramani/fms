@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Cards from "../components/cards";
+import FundsTable from "../components/fundsTable";
 
 const { default: Charts } = require("../components/Charts");
 
@@ -43,16 +44,34 @@ const Dashboard = () => {
   ]);
   return (
     <div className="p-4">
-      <Cards projects={projects} />
-      <div className="bg-white"> 
       <div>
-        <h1>
-          yoo
-        </h1>
-      </div>
+        <div className="px-3">
+          <Cards projects={projects} />
+
+        </div>
+        <div className="px-2 bg-white">
+          <div>
+            <div className="d-flex justify-content-between p-3">
+              <div>
+                projects
+              </div>
+
+              <div>
+                <input type="search" placeholder="Search" name="gsearch" />
+              </div>
+
+            </div>
+            <FundsTable />
+          </div>
+
+
+        </div>
+        <div>
+          <Charts></Charts>
+
+        </div>
       </div>
 
-      <Charts></Charts>
     </div>
   );
 };
