@@ -59,7 +59,8 @@ main.content {
 .logo {
     background-color: $logo;
 }
-.nav_icon{
+
+.nav_icon {
     font-size: 35px;
 }
 
@@ -88,6 +89,7 @@ main.content {
             color: $black;
             font-weight: 800;
         }
+
         a:hover {
             border-radius: 15px;
             background-color: $grey;
@@ -129,9 +131,33 @@ main.content {
         }
     }
 }
+
 .chart_container {
     padding: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
+}
+
+.whole_table {
+    div {
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr 1fr 1fr 2fr 2fr 1fr;
+        gap: 15px;
+
+
+    }
+
+    .table_header {
+        background-color: #F1F4F7;
+        border-top: 2px solid #D9DADC;
+        border-bottom: 2px solid #D9DADC;
+        font-weight: 800;
+
+    }
+
+    .table_content {
+        border-bottom: 2px solid #ECEBEB;
+        background-color: $white;
+    }
 }
