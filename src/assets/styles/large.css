@@ -17,6 +17,7 @@
   }
   .navi {
     height: 50px;
+    width: calc(100% - 200px);
   }
   .nav_icon {
     font-size: 25px;
@@ -24,13 +25,18 @@
   }
 }
 
-.cards {
+.cards_container .cards {
   height: 150px;
   width: 10px;
   font-size: 14px;
 }
 
-.cards .cards-header {
+.cards_container .cards .cards-header {
   border-bottom: 1px solid white;
+}
+
+.cards_container .card_icon {
+  font-size: 60px;
+  color: blue;
 }
 /*# sourceMappingURL=large.css.map */

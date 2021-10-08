@@ -16,7 +16,7 @@ const Navbar = () => {
         </p>
       </div>
       <div className="d-flex align-items-center">
-        <i class="bx bx-bell me-2 pt-1 nav_icon"></i>
+        <i className="bx bx-bell me-2 pt-1 nav_icon"></i>
 
         <Image
           src="https://lh3.googleusercontent.com/ogw/ADea4I4SxN_qQ1a5kbTRn4g5fDx-xfmVkv_eE4ehe2mH=s32-c-mo"

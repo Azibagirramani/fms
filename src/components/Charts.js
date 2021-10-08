@@ -82,7 +82,7 @@ class Charts extends React.Component {
           <HighchartsReact highcharts={Highcharts} options={options} />
 
           <HighchartsReact highcharts={Highcharts} options={options} />
-          <p class="highcharts-description">Add other shi lera</p>
+         
         </div>
       </div>
     );

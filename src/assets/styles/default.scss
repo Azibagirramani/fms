@@ -13,7 +13,11 @@
 }
 
 .navi {
+    position: fixed;
+    width: calc(100% - 244px);
+    z-index: 2;
     background-color: $white;
+    height: 60px;
     display: flex;
     justify-content: space-between;
     box-shadow: 5px 10px 8px #888888;
@@ -23,25 +27,27 @@
     margin: 13px 50px 13px;
 }
 
-.side_options {
-    display: grid;
-    grid-template-rows: 1fr 10fr 1fr;
-    justify-content: start;
-    padding: 20px;
-    position: fixed;
-    background-color: white;
-    width: 250px;
-    height: 100vh;
-    transition: all 0.8s ease-in-out;
+// please dont delete
+// .side_options {
+//     display: grid;
+//     grid-template-rows: 1fr 10fr 1fr;
+//     justify-content: start;
+//     padding: 20px;
+//     position: fixed;
+//     background-color: white;
+//     width: 250px;
+//     height: 100vh;
+//     transition: all 0.8s ease-in-out;
 
-    div {
-        width: inherit;
-        text-align: start;
-    }
-}
+//     div {
+//         width: inherit;
+//         text-align: start;
+//     }
+// }
 
 main.content {
     width: calc(100% - 244px);
+    word-wrap: break-word;
     margin-left: 242px;
     position: relative;
     min-height: 100vh;
@@ -78,7 +84,7 @@ main.content {
             display: flex;
             margin-top: 15px;
             color: $light_grey;
-
+            text-decoration: none;
             padding: 20px 0px 20px 5px;
             width: 80%;
         }
@@ -118,9 +124,14 @@ main.content {
 .cards_container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-
+    
+    .card_icon {
+        font-size: 60px;
+        color: red;
+    }
     .cards {
         border-radius: 10px;
+        overflow: hidden;
         max-width: 18rem;
         background-color: rgb(251, 133, 0);
         margin-right: 20px;
@@ -140,8 +151,14 @@ main.content {
 }
 
 .whole_table {
+    word-wrap: break-word;
+    overflow: auto;
+
+
     div {
         display: grid;
+        word-wrap: break-word;
+
         grid-template-columns: 1fr 2fr 2fr 1fr 1fr 2fr 2fr 1fr;
         gap: 15px;
 
@@ -159,5 +176,34 @@ main.content {
     .table_content {
         border-bottom: 2px solid #ECEBEB;
         background-color: $white;
+    }
+}
+
+hr {
+    color: black !important;
+}
+
+.side-nav {
+    a {
+        display: flex;
+        margin-top: 15px;
+        color: $light_grey;
+        text-decoration: none;
+        padding: 5px 0px 5px 5px;
+        width: 80%;
+    }
+
+    a.active {
+        border-radius: 15px;
+        background-color: $grey;
+        color: $black;
+        font-weight: 800;
+    }
+
+    a:hover {
+        border-radius: 15px;
+        background-color: $grey;
+        color: $black;
+        font-weight: 800;
     }
 }

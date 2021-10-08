@@ -28,7 +28,7 @@ const Dashboard = () => {
       icon: " bx-down-arrow-circle",
     },
     {
-      title: " closed Request",
+      title: " Closed Request",
       amount: "4234",
       rate: "25%",
       backgroundColor: "rgb(230,57,70)",
@@ -37,14 +37,14 @@ const Dashboard = () => {
    
   ]);
   return (
-    <div className="p-4">
+    <div className="p-5">
       <div>
         <div className="px-3">
           <Cards projects={projects} />
 
         </div>
         <div className="px-2 bg-white">
-          <div>
+          <div style={{wordWrap: "break-word", overflow: "hidden"}}>
             <div className="d-flex justify-content-between p-3">
               <div>
                 projects

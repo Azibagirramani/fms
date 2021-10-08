@@ -5,7 +5,7 @@ const Project = () => {
   const percentage = 30;
 
   return (
-    <div className="my-5 px-5 container">
+    <div className=" p-5 container">
       <div className="card shadow-lg">
         <div className="card-header pb-1 pt-3 px-5 bg-white m-0 align-items-center d-flex justify-content-between">
           <p classNam="fw-bold">Lorem ipsum dolor sit</p>

@@ -17,6 +17,8 @@ function App() {
         <SideOptions />
         <main className="content">
           <Navbar />
+          <div className="pt-5" style={{ wordWrap: "break-word"}}>
+            
           <Switch>
             <Route exact path="/">
               <Dashboard />
@@ -31,6 +33,8 @@ function App() {
               <Settings />
             </Route>
           </Switch>
+          
+          </div>
         </main>
       </div>
     </Router>

@@ -15,7 +15,7 @@ const Cards = ({projects}) => {
                 </div>
                 <div>
                   <i
-                    class={`bx bx-time-five bx-lg pt-4 ${project.backgroundColor}`}
+                    className={`bx bx-time-five card_icon pt-4 ${project.backgroundColor}`}
                   ></i>
                 </div>
               </div>
