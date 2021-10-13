@@ -63,3 +63,56 @@ textarea {
   background-color: #eaf2ff;
   color: #60656c;
 }
+
+
+
+
+/* dashboard content class */
+
+.sider-bar {
+  position: fixed;
+  z-index: 1;
+}
+
+.right-side-content {
+  margin-left: 20rem;
+  width: 100%;
+}
+
+.right-side-content .header {
+  position: fixed;
+  z-index: 1;
+  width: 81%;
+}
+
+.main-content{
+  margin: 6rem 2rem;
+}
+
+.card-custom {
+  border-radius: 0.6rem !important;
+  filter: drop-shadow(4px 32px 16px #d9d9d9);
+}
+
+.card-custom .card-header {
+  border-bottom: 0.001rem solid rgb(238, 237, 237);
+}
+/* card colors  */
+/* #FB8500 */
+/* #01B3D3 */
+/* #02BC77 */
+/* #E63946 */
+/* #073B4C */
+
+
+.status-container {
+  min-width: none;
+  max-width: inherit;
+  background-color: white;
+  height: 2rem;
+  max-height: 2rem;
+}
+
+.status-container .bar {
+  background-color: yellow;
+}

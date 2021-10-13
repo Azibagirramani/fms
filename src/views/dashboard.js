@@ -1,85 +1,121 @@
-const { default: Charts } = require("../components/Charts");
-
+import Cards from "../components/Cards";
 const Dashboard = () => {
+  const cardContent = [
+    {
+      value: 200,
+      header: "Pending request",
+      bgColor: "#FB8500",
+      percentage: "+30%",
+      icon: "bx-time-five",
+    },
+    {
+      value: 220,
+      header: "Approved request",
+      bgColor: "#01B3D3",
+      percentage: "+30%",
+      icon: "bxs-time",
+    },
+    {
+      value: 256,
+      header: "Disbursed funds",
+      bgColor: "#02BC77",
+      percentage: "+30%",
+      icon: "bxs-down-arrow-circle",
+    },
+    {
+      value: 256,
+      header: "Rejected Request",
+      bgColor: "#E63946",
+      percentage: "+30%",
+      icon: "bxs-x-circle",
+    },
+    {
+      value: 100,
+      header: "Expended",
+      bgColor: "#073B4C",
+      percentage: "+30%",
+      icon: "bxs-up-arrow-circle",
+    },
+  ];
   return (
-    <div className="p-4">
-      <div className="cards_container">
-        <div className="cards text-white mb-3">
-          <div className="cards-header ">Pending request</div>
-          <div className="card-body p-3 d-flex justify-content-between">
-            <div className="ps-2">
-              <p className="fs-3 fw-bold">50</p>
-              <p className="fs-6">-25%</p>
-            </div>
-            <div>
-              <i class="bx bx-time-five bx-lg pt-4"></i>
-            </div>
+    <>
+      <div className="row">
+        {cardContent.map((content) => {
+          return (
+            <>
+              <div className="col">
+                <Cards
+                  bgColor={content.bgColor}
+                  header={content.header}
+                  percentage={content.percentage}
+                  value={content.value}
+                  icon={content.icon}
+                />
+              </div>
+            </>
+          );
+        })}
+      </div>
+
+      <div className="card mt-5 shadow-lg border-0">
+        <div className="row card-header bg-transparent m-0">
+          <div className="col-md-9">
+            <p className="fw-light">Projects</p>
+          </div>
+          <div className="col">
+            <input
+              type="text"
+              className="form-control flex-shrink-1 form-control-sm rounded-pill"
+            />
           </div>
         </div>
-        <div
-          className="cards text-white mb-3"
-          style={{ backgroundColor: "rgb(1,179,211)" }}
-        >
-          <div className="cards-header ">Approved request</div>
-          <div className="card-body p-3 d-flex justify-content-between">
-            <div className="ps-2">
-              <p className="fs-3 fw-bold">231</p>
-              <p className="fs-6">+7%</p>
-            </div>
-            <div>
-              <i class="bx bx-check-circle bx-lg pt-4"></i>
-            </div>
-          </div>
-        </div>
-        <div
-          className="cards text-white mb-3"
-          style={{ backgroundColor: "rgb(2,188,119)" }}
-        >
-          <div className="cards-header ">Disbursed funds</div>
-          <div className="card-body p-3 d-flex justify-content-between">
-            <div className="ps-2">
-              <p className="fs-3 fw-bold">155K</p>
-              <p className="fs-6">+25%</p>
-            </div>
-            <div>
-              <i class="bx bx-down-arrow-circle bx-lg pt-4"></i>
-            </div>
-          </div>
-        </div>
-        <div
-          className="cards text-white mb-3"
-          style={{ backgroundColor: "rgb(230,57,70)" }}
-        >
-          <div className="cards-header ">Rejected Request</div>
-          <div className="card-body p-3 d-flex justify-content-between">
-            <div className="ps-2">
-              <p className="fs-3 fw-bold">4234</p>
-              <p className="fs-6">+19%</p>
-            </div>
-            <div>
-              <i class="bx bx-x-circle bx-lg pt-4"></i>
-            </div>
-          </div>
-        </div>
-        <div
-          className="cards text-white mb-3"
-          style={{ backgroundColor: "rgb(7,59,76)" }}
-        >
-          <div className="cards-header ">Expended</div>
-          <div className="card-body p-3 d-flex justify-content-between">
-            <div className="ps-2">
-              <p className="fs-3 fw-bold">4234k</p>
-              <p className="fs-6">+19%</p>
-            </div>
-            <div>
-              <i class="bx bx-up-arrow-circle bx-lg pt-4"></i>
-            </div>
-          </div>
+        <div className="card-body p-0">
+          <table class="table table-borderless">
+            <thead class="bg-light">
+              <tr className="">
+                <th scope="col">S/N</th>
+                <th scope="col">Project name</th>
+                <th scope="col">Project Manager</th>
+                <th scope="col">Supervisor</th>
+                <th scope="col">Start Date</th>
+                <th scope="col">Amount Allocated</th>
+                <th scope="col">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>1</th>
+                <td>Lorem ipsum dolor sit amet</td>
+                <td>dolor sit amet</td>
+                <td>dolor sit amet</td>
+                <td>dolor sit amet</td>
+                <td>dolor sit amet</td>
+                <td className="status-container">
+                  <span className="bar"></span>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
 
-      <Charts></Charts>
-    </div>
+      <div className="row">
+        <div className="col"></div>
+        <div className="col"></div>
+      </div>
+    </>
   );
 };
 
