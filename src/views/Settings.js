@@ -16,9 +16,9 @@ const Settings = () => {
                 </div>
               </div>
               <div class="row px-2 m-3">
-                <h4 className="fw-bold d-flex align-items-center justify-content-center text-secondary">
+                <h6 className="fw-bold d-flex align-items-center justify-content-center text-dark fs-5">
                   Change Profile Picture
-                </h4>
+                </h6>
               </div>
               <div class="row px-2 m-4">
                 <button className="btn btn-success btn-lg rounded-pill gap-2 px-5 fw-bold d-flex align-items-center justify-content-center">
