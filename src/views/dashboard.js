@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Cards from "../components/cards";
 import FundsTable from "../components/fundsTable";
+import { Counter } from "../features/counter/Counter";
 
 const { default: Charts } = require("../components/Charts");
 
@@ -42,7 +43,8 @@ const Dashboard = () => {
         <div className="px-3">
           <Cards projects={projects} />
 
-        </div>
+        </div> <Counter/> </div>
+        <div>
         <div className="px-2 bg-white">
           <div style={{wordWrap: "break-word", overflow: "hidden"}}>
             <div className="d-flex justify-content-between p-3">

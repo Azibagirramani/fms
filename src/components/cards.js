@@ -15,8 +15,9 @@ const Cards = ({projects}) => {
                 </div>
                 <div>
                   <i
-                    className={`bx bx-time-five card_icon pt-4 ${project.backgroundColor}`}
+                    className={`bx bx-time-five card_icon pt-4`}
                   ></i>
+                  12
                 </div>
               </div>
             </div>
