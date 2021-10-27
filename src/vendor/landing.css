@@ -1,0 +1,126 @@
+/* F6F6F6 */
+/* EBEBEB */
+
+/* *{
+  background-color: ;
+} */
+.default-background {
+  background-color: #f6f6f6;
+}
+
+.default-margin-top {
+  margin-top: 10rem;
+}
+
+.default-font-weight {
+  font-weight: 600;
+}
+
+.default-header-weight {
+  font-weight: 400;
+}
+
+.left-hero-area {
+  background-color: #ebebeb;
+}
+
+.default-margin-top-2x {
+  margin-top: 10rem;
+}
+
+.default-font-dark-color {
+  color: #686868 !important;
+}
+
+.default-2x-weight {
+  font-weight: 600;
+}
+
+.default-header-2x-weight {
+  font-weight: 300;
+}
+
+.default-margin-tb-2x {
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+}
+
+.default-2x-margin-top {
+  margin-top: 6rem;
+}
+
+.accordion-button {
+  padding: 2rem;
+  background-color: #ebebeb !important;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: rgba(0, 0, 0, 0.125);
+}
+
+.accordion-item:hover {
+  cursor: pointer;
+  background-color: #f6f6f6 !important;
+}
+
+.footer h6 {
+  font-weight: 600 !important;
+  padding-bottom: 1rem;
+  color: grey;
+}
+
+.default-nav .nav-link {
+  padding: 0.3rem 0rem;
+  font-weight: 600;
+  color: grey;
+  font-size: 0.9rem;
+}
+
+.default-font-size-1x {
+  font-size: 0.7rem;
+  font-weight: 700 !important;
+}
+
+/* clip paths */
+
+.triangle {
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  width: 1.5rem;
+  height: 1.5rem;
+  border-color: transparent;
+  background-color: #6C63FF;
+  transform: rotate(45deg);
+}
+
+.circle {
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: red;
+  position: absolute;
+}
+
+.div-icon-margin-bt i {
+    margin-bottom: 0.9rem !important
+}
+
+.div-icon-margin-bt {
+    cursor: pointer;
+}
+
+.square-clip{
+    background-image: url("../assets/img/square2d.png");
+    height: 20rem;
+    width: 20rem;
+    transform: translate(-80px, -60px);
+    clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 80%, 100% 100%, 0 100%, 0% 80%, 0% 20%);
+}
+
+.login-auth-image {
+  background-position: center;
+  background-size: cover;
+  background-image: url("../assets/img/login.svg");
+}

@@ -1,42 +1,21 @@
-// import './App.css';
-import "./assets/styles/all.css";
-import "./vendor/custom.css"
-import "bootstrap/dist/css/bootstrap.min.css";
-import Navbar from "./components/Navbar";
-import SideOptions from "./components/SideOptions";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Dashboard from "./views/dashboard";
-import Funds from "./views/Funds";
-import Settings from "./views/Settings";
-import Project from "./views/Project";
-
+import Dashboard from "./views/Main";
+import Landing from "./views/Landing";
+import Login from "./views/Login"
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <SideOptions />
-        <main className="content">
-          <Navbar />
-          <div className="pt-5" style={{ wordWrap: "break-word"}}>
-            
-          <Switch>
-            <Route exact path="/">
-              <Dashboard />
-            </Route>
-            <Route exact path="/funds">
-              <Funds />
-            </Route>
-            <Route exact path="/projects">
-              <Project />
-            </Route>
-            <Route exact path="/Settings">
-              <Settings />
-            </Route>
-          </Switch>
-          
-          </div>
-        </main>
-      </div>
+    <Router >
+      <Switch>
+        <Route exact path="/" >
+          <Landing />
+        </Route>
+        <Route path="/login">
+          <Login />
+        </Route>
+        <Route path="/dashboard">
+          <Dashboard />
+        </Route>
+      </Switch>
     </Router>
   );
 }

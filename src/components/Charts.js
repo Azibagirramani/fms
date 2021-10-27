@@ -4,13 +4,13 @@ import HighchartsReact from "highcharts-react-official";
 
 const options = {
   chart: {
-    type: "column",
+    type: "line",
   },
   title: {
-    text: "Monthly Average Rainfall",
+    text: null,
   },
   subtitle: {
-    text: "Source: WorldClimate.com",
+    text: null,
   },
   xAxis: {
     categories: [
@@ -27,7 +27,7 @@ const options = {
       "Nov",
       "Dec",
     ],
-    crosshair: true,
+    crosshair: false,
   },
   yAxis: {
     min: 0,
@@ -35,6 +35,9 @@ const options = {
       text: "Rainfall (mm)",
     },
   },
+  credits: {
+    enabled: false
+},
   tooltip: {
     headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
     pointFormat:
@@ -43,12 +46,6 @@ const options = {
     footerFormat: "</table>",
     shared: true,
     useHTML: true,
-  },
-  plotOptions: {
-    column: {
-      pointPadding: 0.2,
-      borderWidth: 0,
-    },
   },
   series: [
     {
@@ -77,14 +74,7 @@ const options = {
 class Charts extends React.Component {
   render() {
     return (
-      <div>
-        <div className="chart_container">
-          <HighchartsReact highcharts={Highcharts} options={options} />
-
-          <HighchartsReact highcharts={Highcharts} options={options} />
-         
-        </div>
-      </div>
+      <HighchartsReact highcharts={Highcharts} options={options} />         
     );
   }
 }

@@ -24,25 +24,25 @@ const SideOptions = () => {
 
           <li>
             <NavLink to="/" exact>
-              <i class="bx-fw bx  bx bx-credit-card pt-1"></i>
+              <i className="bx-fw bx  bx bx-credit-card pt-1"></i>
               <span>Dashboard</span>
             </NavLink>
           </li>
           <li>
             <NavLink to="/Funds">
-              <i class="bx-fw bx  bx bx-credit-card pt-1"></i>
+              <i className="bx-fw bx  bx bx-credit-card pt-1"></i>
               <span>Funds</span>
             </NavLink>
           </li>
           <li>
             <NavLink to="/Projects">
-              <i class="bx-fw bx bx bx-gift pt-1"></i>
+              <i className="bx-fw bx bx bx-gift pt-1"></i>
               <span>Projects</span>
             </NavLink>
           </li>
           <li>
             <NavLink to="/Settings">
-              <i class="bx-fw bx bx-slider bx-rotate-90 ps-2"></i>
+              <i className="bx-fw bx bx-slider bx-rotate-90 ps-2"></i>
              Settings
            </NavLink>
           </li>
@@ -78,28 +78,28 @@ const SideOptions = () => {
     //     <nav>
     //       <NavLink to="/" exact>
     //         <span className="h-5">
-    //           <i class="bx-fw bx bx-border-all"></i>
+    //           <i className="bx-fw bx bx-border-all"></i>
     //           Dashboard
     //         </span>
     //       </NavLink>
 
     //       <NavLink to="/Funds">
-    //         <i class="bx-fw bx  bx bx-credit-card pt-1"></i>
+    //         <i className="bx-fw bx  bx bx-credit-card pt-1"></i>
     //         <span>Funds</span>
     //       </NavLink>
     //       <NavLink to="/Projects">
-    //         <i class="bx-fw bx bx bx-gift pt-1"></i>
+    //         <i className="bx-fw bx bx bx-gift pt-1"></i>
     //         <span>Projects</span>
     //       </NavLink>
     //       <NavLink to="/Settings">
-    //         <i class="bx-fw bx bx-slider bx-rotate-90 ps-2"></i>
+    //         <i className="bx-fw bx bx-slider bx-rotate-90 ps-2"></i>
     //         Settings
     //       </NavLink>
     //     </nav>
     //   </div>
 
     //   <div className="border-top  logout d-flex" onClick={logout}>
-    //     <i class="bx bx-log-out pe-2 bx-md  "></i>
+    //     <i className="bx bx-log-out pe-2 bx-md  "></i>
     //     <span className="pt-1">logout </span>
     //   </div>
     // </div>

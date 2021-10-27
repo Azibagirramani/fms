@@ -20,11 +20,11 @@ const FundsTable = () => {
                 <p>big stuff</p>
                 <p>1/12/2016</p>
                 <p className="ms-3">N60,000</p>
-                <div class="progress me-5 mt-1">
-                    <div class="progress-bar " role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                <div className="progress me-5 mt-1">
+                    <div className="progress-bar " role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
 
-                <p><i class='bx bx-edit bx-md'></i> </p>
+                <p><i className='bx bx-edit bx-md'></i> </p>
 
             </div>
             <div className="table_content mb-1 px-3 pt-3">
@@ -34,11 +34,11 @@ const FundsTable = () => {
                 <p>lil stuff</p>
                 <p>1/12/2018</p>
                 <p className="ms-3">N50,000</p>
-                <div class="progress me-5 mt-1">
-                    <div class="progress-bar bg-danger" role="progressbar" style={{width: '100%'}} aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                <div className="progress me-5 mt-1">
+                    <div className="progress-bar bg-danger" role="progressbar" style={{width: '100%'}} aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
 
-                <p><i class='bx bxs-droplet-half bx-md'></i> </p>
+                <p><i className='bx bxs-droplet-half bx-md'></i> </p>
 
             </div>
         </div>

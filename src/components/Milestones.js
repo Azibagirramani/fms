@@ -6,7 +6,7 @@ function Milestones() {
         <div className="d-flex px-5 mt-4 flex-column">
           <div className="d-flex m-0 p-0 justify-content-between align-items-center">
             <div className="d-flex gap-3 border-start border-primary border-5">
-              <i class="bx bxs-check-square ms-2 fs-3 icon-color-plus"></i>
+              <i className="bx bxs-check-square ms-2 fs-3 icon-color-plus"></i>
               <div className="d-flex flex-column">
                 <p className="m-0 p-0 fw-bold">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
@@ -48,15 +48,15 @@ function Milestones() {
                 <div className="d-flex">
                   Download:{" "}
                   <span className="d-flex">
-                    <i class="bx bxs-file-doc text-danger fs-3"></i>
-                    <i class="bx bxs-file-pdf text-secondary fs-3"></i>
+                    <i className="bx bxs-file-doc text-danger fs-3"></i>
+                    <i className="bx bxs-file-pdf text-secondary fs-3"></i>
                   </span>
                 </div>
               </div>
             </div>
             <div className="d-flex gap-4">
-              <i class="bx bx-trash text-danger fs-3"></i>
-              <i class="bx bx-edit text-primary fs-3"></i>
+              <i className="bx bx-trash text-danger fs-3"></i>
+              <i className="bx bx-edit text-primary fs-3"></i>
             </div>
           </div>
         </div>
@@ -88,7 +88,7 @@ function Milestones() {
 
       {/* popup modal  */}
       <div
-        class="modal fade"
+        className="modal fade"
         id="exampleModal"
         tabindex="-1"
         aria-labelledby="exampleModalLabel"
@@ -96,20 +96,20 @@ function Milestones() {
         data-bs-backdrop="static"
         data-bs-keyboard="false"
       >
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">
+        <div className="modal-dialog modal-lg modal-dialog-centered">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h5 className="modal-title" id="exampleModalLabel">
                 Milestone Report
               </h5>
               <button
                 type="button"
-                class="btn-close"
+                className="btn-close"
                 data-bs-dismiss="modal"
                 aria-label="Close"
               ></button>
             </div>
-            <div class="modal-body">
+            <div className="modal-body">
               <p>
                 Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit
               </p>
@@ -118,10 +118,10 @@ function Milestones() {
                 <div className="row">
                   <div className="col-md-3 fw-bold">Amount Spent:</div>
                   <div className="col-md-7">
-                    <input type="text" class="form-control" />
+                    <input type="text" className="form-control" />
                   </div>
                   <div className="col-md-2">
-                    <select class="form-select rounded">
+                    <select className="form-select rounded">
                       <option value="1">One</option>
                       <option value="2">Two</option>
                       <option value="3">Three</option>
@@ -129,11 +129,11 @@ function Milestones() {
                   </div>
                 </div>
                 <div>
-                  <label for="description" class="form-label">description</label>
+                  <label for="description" className="form-label">description</label>
                   <textarea  className="form-control w-100"/>
                 </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-primary">
+                <div className="modal-footer">
+                  <button type="button" className="btn btn-primary">
                     Save changes
                   </button>
                 </div>
