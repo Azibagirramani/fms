@@ -37,7 +37,7 @@
 }
 
 .default-header-2x-weight {
-  font-weight: 300;
+  font-weight: 600;
 }
 
 .default-margin-tb-2x {
@@ -78,8 +78,7 @@
 }
 
 .default-font-size-1x {
-  font-size: 0.7rem;
-  font-weight: 700 !important;
+  font-size: 0.9rem;
 }
 
 /* clip paths */
@@ -123,4 +122,25 @@
   background-position: center;
   background-size: cover;
   background-image: url("../assets/img/login.svg");
+}
+
+.form-control {
+  color: transparent !important;
+  background-color: transparent !important;
+  border-color: none !important;
+  outline: none !important;
+  box-shadow: black !important;
+}
+
+
+.fw-600{
+  font-weight: 600;
+}
+
+.fs-1-4{
+  font-size: 1.2rem;
+}
+
+.fs-2-2 {
+  font-size: 2.6rem;
 }

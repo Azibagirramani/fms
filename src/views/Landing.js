@@ -52,7 +52,7 @@ function NavigationBar() {
           </ul>
           </ul>
           <button
-            className="nav-link btn btn-outline-dark text-dark border-2 py-2"
+            className="nav-link btn btn-outline-dark text-dark border-2 py-2 m-4"
             href="#/"
           >
             Sign Up
@@ -67,25 +67,19 @@ function NavigationBar() {
 function HeroSection() {
   return (
     <>
-      <div className="position-relative">
-        {/* <div className="position-absolute" style={{ left: 600 }}>
-          <div className="triangle"></div>
-        </div>
-        <div className="position-absolute" style={{ left: 600 }}>
-          <div className="triangle"></div>
-        </div> */}
-        <div className="container  my-5 ">
+      <div className="">
+        <div className="container my-5">
           <div className="d-flex flex-column mt-lg-4 gap-1 flex-lg-row justify-content-between">
             <div className="col-md-5">
-              <h1 className="display-1">A Better Way to Send Money</h1>
-              <p className="py-3 default-font-dark-color">
+              <h1 className="display-1 fw-600">A Better Way to Manage funds</h1>
+              <p className="py-3 default-font-dark-color fs-1-4 fw-base">
                 {" "}
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Excepturi officia assumenda voluptatum a ducimus optio placeat
                 soluta
               </p>
 
-              <div className="col-md-10">
+              <div className="col-md-9">
                 <div className="input-group border border-dark border-2 rounded">
                   <input
                     type="text"
@@ -122,53 +116,52 @@ function Choices() {
           {" "}
           <div className="row w-100 mt-5">
             <div className="col-md-6 left-hero-area left-choice d-flex flex-column align-items-center py-5">
-              <h2 className="default-header-2x-weight default-font-dark-color col-md-8 display-6">
+              <h2 className="default-header-2x-weight fs-2-2 col-md-8">
                 A wide Choice of Ways to Send Money Online from the UK
               </h2>
-              <p className="mt-4 default-font-dark-color default-2x-weight col-md-8 text-left lh-lg">
+              <p className="mt-4 col-md-8 text-left lh-lg">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Adipisci facere hic voluptas in temporibus ea
+                Adipisci facere hic voluptas in temporibus ea Adipisci facere hic voluptas in temporibus ea
               </p>
             </div>
             <div className="col-md-6 d-flex justify-content-center align-items-center">
               <div className="row row-cols-2 p-5 gy-lg-5 gx-lg-5">
                 <div className="col">
-                  <h6>Bank</h6>
+                  <h5>Bank</h5>
                   <h3 className="fw-bold mb-3">Transfer</h3>
                   <p className="default-font-dark-color">
                     Send a secure bank transfer directly to hundreds
                   </p>
-                  <div className="d-flex align-items-center gap-2 div-icon-margin-bt">
-                    <p className="text-dark fs-6 fw-bold">Learn more</p>
-                    <i className="fa fa-long-arrow-right fs-4" aria-hidden="true"></i>
+                  <div className="d-flex align-items-center gap-3 div-icon-margin-bt">
+                    <p className="text-dark fs-5 fw-600">Learn more</p>
+                    <i class="bi bi-arrow-right h2"></i>
                   </div>
                 </div>
                 <div className="col">
-                  <h6>Bank</h6>
+                  <h5>Bank</h5>
                   <h3 className="fw-bold mb-3">Transfer</h3>
-                  <i className="bi bi-arrow-bar-down"></i>
                   <p>Send a secure bank transfer directly to hundreds</p>
-                  <div className="d-flex align-items-center gap-2 div-icon-margin-bt">
-                    <p className="text-dark fs-6 fw-bold">Learn more</p>
-                    <i className="fa fa-long-arrow-right fs-4" aria-hidden="true"></i>
+                  <div className="d-flex align-items-center gap-3 div-icon-margin-bt">
+                    <p className="text-dark fs-5 fw-600">Learn more</p>
+                    <i class="bi bi-arrow-right h2"></i>
                   </div>
                 </div>
                 <div className="col">
-                  <h6>Bank</h6>
+                  <h5>Bank</h5>
                   <h3 className="fw-bold mb-3">Transfer</h3>
                   <p>Send a secure bank transfer directly to hundreds</p>
-                  <div className="d-flex align-items-center gap-2 div-icon-margin-bt">
-                    <p className="text-dark fs-6 fw-bold">Learn more</p>
-                    <i className="fa fa-long-arrow-right fs-4" aria-hidden="true"></i>
+                  <div className="d-flex align-items-center gap-3 div-icon-margin-bt">
+                    <p className="text-dark fs-5 fw-600">Learn more</p>
+                    <i class="bi bi-arrow-right h2"></i>
                   </div>
                 </div>
                 <div className="col">
-                  <h6>Bank</h6>
+                  <h5>Bank</h5>
                   <h3 className="fw-bold mb-3">Transfer</h3>
                   <p>Send a secure bank transfer directly to hundreds</p>
-                  <div className="d-flex align-items-center gap-2 div-icon-margin-bt">
-                    <p className="text-dark fs-6 fw-bold">Learn more</p>
-                    <i className="fa fa-long-arrow-right fs-4" aria-hidden="true"></i>
+                  <div className="d-flex align-items-center gap-3 div-icon-margin-bt">
+                    <p className="text-dark fs-5 fw-600">Learn more</p>
+                    <i class="bi bi-arrow-right h2"></i>
                   </div>
                 </div>
               </div>
@@ -192,7 +185,7 @@ function FastSecure() {
             <h1 className="display-4 text-justify default-header-weight">
               Lorem ipsum dolor, sit amet consect officia
             </h1>
-            <p className="mt-4 text-justify default-font-weight lh-lg">
+            <p className="mt-4 text-justify lh-lg">
               {" "}
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Deserunt, in temporibus? Enim molestiae, mollitia nisi consectetur
@@ -460,12 +453,11 @@ function Footer() {
           </div>
         </div>
       </div>
-      <p className="mt-5 col-md-5 default-font-size-1x">
+      <p className="mt-5 col-md-4 default-font-size-1x">
         {" "}
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione hic
         repellat deserunt debitis quam ut dolorum assumenda. Adipisci dolorem,
-        voluptatibus quis dolore, ipsum temporibus, vel possimus qui corporis
-        aliquam excepturi.
+        voluptatibus quis dolore, ipsum temporibus,
       </p>
     </div>
   );
