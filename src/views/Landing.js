@@ -45,11 +45,11 @@ function NavigationBar() {
                 Product
               </a>
             </li>
-            <Link to="/login" className="nav-item">
-              <a className="nav-link" href="#/">
-                Log in
-              </a>
+            <ul className="nav-item p-0">
+            <Link to="/login" className="nav-link">
+            Log in
             </Link>
+          </ul>
           </ul>
           <button
             className="nav-link btn btn-outline-dark text-dark border-2 py-2"
